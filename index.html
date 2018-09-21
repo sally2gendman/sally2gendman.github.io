@@ -5,25 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sally Tugendman Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css">   
+    <link href="./css/hamburgers.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 </head>
+
 <body>
-    
     <main id="fullpage">
 
-        <!-- <section class="section" id="header">
-            <img src="./images/FINALLOGO2.png">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./project.html">Work</a>
-            <a href="#footer">Contact</a>
-        </section> -->
+        <section class="section" id="about" data-anchor="about-section">
+            <header>
+                <div class="hide-on-desktop">
+                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
+                    <span class="hamburger hamburger--squeeze" type="button" id="js-mobile-header-button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </span>
+                    <nav class="home-mobile-header-links mobile-header-links" style="display: none;">
+                        <a href="./index.html" class="header-link">Home</a>
+                        <!-- <hr> -->
+                        <a href="./about.html" class="header-link">About</a>
+                        <!-- <hr> -->
+                        <a href="./project.html" class="header-link">Work</a>
+                        <!-- <hr> -->
+                        <a href="./Resume.pdf" class="header-link">Resume</a>
+                        <!-- <hr> -->
+                        <a href="" class="header-link" id="mobile-footer-link">Contact</a>
+                    </nav>
+                </div>
+                <div class="hide-on-mobile">
+                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
+                    <nav class="header-links">
+                        <a href="./index.html" class="header-link">Home</a>
+                        <a href="./about.html" class="header-link">About</a>
+                        <a href="./project.html" class="header-link">Work</a>
+                        <a href="./Resume.pdf" class="header-link">Resume</a>
+                        <a href="" class="header-link" id="desktop-footer-link">Contact</a>
+                    </nav>
+                </div>
+            </header>
 
-        <section class="section" id="about">
             <div class="container">
                 <h1>Hey there! My name is Sally</h1>
                 <h3>I’m a UI/UX Designer based in San Francisco.<br>
@@ -32,18 +57,18 @@
             </div>
         </section>
 
-        <section class="section" id="work">
-            <div class="container">
-                <h1 class="center underline">Work</h1>
-        
-                <div class="section-content">
-                    <div class="col col-3-of-5">
-                        <img src="./images/Group.png" alt="CloudBin on laptop" class="full-width">
+        <section class="section" id="work" data-anchor="work-section">
+            <div class="container mt-50 mb-50">
+                <h1 class="center mb-50">Work</h1>
+
+                <div class="left mt-50 mb-50">
+                    <div class="left col-3-of-5">
+                        <img src="./images/Group.png" alt="CloudBin on laptop" class="mw-100 mb-50">
                     </div>
-                    <div class="col col-2-of-5">
+                    <div class="left col-2-of-5">
                         <h2>CloudBin</h2>
                         <hr>
-                        <div class="section-text">
+                        <div class="mb-30">
                             <p class="italic">RESEARCH - BRANDING - WIREFRAMES<br>Hi-FIDELITY MOCKUPS - PROTOTYPES</p>
                             <p>CloudBin is a cloud storage platform that provides users with a seamless experience that focuses on content organization and user collaboration</p>
                         </div>
@@ -51,54 +76,77 @@
                     </div>
                 </div>
 
-                <div class="section-content">
-                    <div class="col col-3-of-5">
+                <div class="left mt-50 mb-50">
+                    <div class="left col-2-of-5 mb-50">
+                        <img src="./images/Phonescopy.png" alt="iPhone" class="center-image hide-on-desktop mw-100 mb-50">
                         <h2>Beauty Reviews</h2>
                         <hr>
-                        <div class="section-text">
+                        <div class="mb-30">
+                            <p class="italic">RESEARCH - BRANDING - WIREFRAMES<br>Hi-FIDELITY MOCKUPS - PROTOTYPES</p>
                             <p>Mobile application that allows users to post reviews on various makeup, skincare and beauty items.</p>
-                            <span class="button">Coming Soon</span>
                         </div>
+                        <span class="button">Coming Soon</span>
                     </div>
-                    <div class="col col-2-of-5">
-                        <img src="./images/Phones.png" alt="iPhone" class="full-width">
+                    <div class="left col-3-of-5 hide-on-mobile">
+                        <img src="./images/Phonescopy.png" alt="iPhone" class="center-image mw-100">
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        
-        <section class="section" id="photography">
-            <div class="container">
-                <h1 class="center underline">Photography</h1>
-                <div class="container">
-                    <p>My path to digital design began with photography (read more about that here). Here is a collection of my work, both in digital and black & white film.</p>
-                </div>
-                <img src="./images/photocollage.png" alt="Photo Collage" class="full-width">
             </div>
         </section>
 
-        <section class="section fp-auto-height" id="footer">
+
+        <section class="section" id="photography" data-anchor="photos-section">
+            <div class="container mt-50 mb-50">
+                <h1 class="center mb-50">Photography</h1>
+                <div class="container mt-50 mb-50">
+                    <p>My path to digital design began with photography (read more about that <a href="./about.html">here</a>). Here is a collection of my work, both in digital and black & white film.</p>
+                </div>
+                <img src="./images/photocollage-01.png" alt="Photo Collage" class="mw-100 center-image">
+            </div>
+        </section>
+
+        <section class="section fp-auto-height center" id="footer" data-anchor="footer-section">
             <div class="container" id="footer-content">
-                <h2>Want to connect?</h2>
-                <a href="mailto:sally.tugendman3@gmail.com">sally.tugendman3@gmail.com</a>
-                <a href="https://www.linkedin.com/in/stugendman">LinkedIn</a>
-                <a href="https://github.com/sally2gendman/">Github</a>
-                <a href="./Resume.pdf">Resume</a>
-                <hr>
-                  
+                <h1>Want to connect?</h1>
+                <div class="mt-50">
+                    <a href="mailto:sally.tugendman3@gmail.com" class="contact-links"><img src="./images/envelope.png"></a>
+                    <a href="https://www.linkedin.com/in/stugendman" class="contact-links"><img src="./images/linkedin.png"></a>
+                    <a href="https://github.com/sally2gendman/" class="contact-links"><img src="./images/github.png"></a>
+                </div>
+
+                <p class="mt-50">© 2018 Designed and Coded by Sally Tugendman</p>
             </div>
         </section>
-
     </main>
 
+    <script src="./js/scrolloverflow.js"></script>
     <script src="./js/fullpage.min.js"></script>
     <script src="./js/fullpage.extensions.min.js"></script>
     <script>
         new fullpage('#fullpage', {
             licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
-        });
+            scrollOverflow: true,
+            afterRender: function() {
+                var desktopFooterLink = document.getElementById('desktop-footer-link');
+                var mobileFooterLink = document.getElementById('mobile-footer-link');
+                var headerButton = document.getElementById('js-mobile-header-button');
 
+                desktopFooterLink.onclick = function(e) {
+                    e.preventDefault();
+                    fullpage_api.moveTo('footer-section');
+                }
+                mobileFooterLink.onclick = function(e) {
+                    e.preventDefault();
+                    fullpage_api.moveTo('footer-section');
+                }
+                headerButton.onclick = function(e) {
+                    e.preventDefault();
+                    $('.mobile-header-links').slideToggle('slow');
+                    headerButton.classList.toggle('is-active');
+                }
+            }
+        });
     </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </body>
 </html>

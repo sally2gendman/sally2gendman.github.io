@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sally Tugendman Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
+    <link href="./css/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 </head>
+
 <body>
     <main id="fullpage">
 
-        <header class="section" id="header">
-            <img src="./images/FINALLOGO2.png" alt="Logo">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./project.html">Work</a>
-            <a href="#footer">Contact</a>
-        </header>
-
-        <section class="section" id="herounit">
-            <h1>CloudBin</h1>
-            <h3>CloudBin is a cloud storage platform that provides users with a seamless 
-            experience that focuses on content organization and user collaboration.</h3>
-            <img src="./images/Group.png" alt="cloudbin laptop">
-            <a href="https://invis.io/XJMM9APSFY7">View Prototype</a>
-        </section>
-        <section class="section" id="summary">
-            <div class="grid">
-                <div class="grid-right col-1-of-3">
-                    <img src="./images/LandingPage.png" alt="landing page screen">
+        <section class="section" id="project-page" data-anchor="landing">
+            <header>
+                <div class="hide-on-desktop">
+                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
+                    <span class="hamburger hamburger--squeeze" type="button" id="js-mobile-header-button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </span>
+                    <nav class="project-mobile-header-links mobile-header-links" style="display: none;">
+                        <a href="./index.html" class="header-link">Home</a>
+                        <!-- <hr> -->
+                        <a href="./about.html" class="header-link">About</a>
+                        <!-- <hr> -->
+                        <a href="./project.html" class="header-link">Work</a>
+                        <!-- <hr> -->
+                        <a href="./Resume.pdf" class="header-link">Resume</a>
+                        <!-- <hr> -->
+                        <a href="" class="header-link" id="mobile-footer-link">Contact</a>
+                    </nav>
                 </div>
-                <div class="grid-left col-2-of-3">
-                    <div class="column">
+                <div class="hide-on-mobile">
+                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
+                    <nav class="header-links">
+                        <a href="./index.html" class="header-link">Home</a>
+                        <a href="./about.html" class="header-link">About</a>
+                        <a href="./project.html" class="header-link">Work</a>
+                        <a href="./Resume.pdf" class="header-link">Resume</a>
+                        <a href="" class="header-link" id="desktop-footer-link">Contact</a>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="container center mt-150 mb-150">
+                <h1>CloudBin</h1>
+                <h3 class="cloudbin-info">CloudBin is a cloud storage platform that provides users with a seamless
+                    experience that focuses on content organization and user collaboration.</h3>
+                <div class="laptop">
+                    <img src="./images/Group.png" alt="cloudbin laptop" class="mw-100">
+                </div>
+                <div class="full-width center">
+                    <a href="https://invis.io/XJMM9APSFY7" class="view-prototype">View Prototype</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section project-text" data-anchor="process-section">
+            <img src="./images/TheProcess.png" alt="process header" class="full-width">
+            <div class="container mt-50 mb-25">
+
+                <div class="right col-1-of-4-d mb-25 center">
+                    <img src="./images/LandingPage.png" alt="landing page screen" class="mw-100">
+                </div>
+                <div class="left col-3-of-4">
+                    <div class="left col-3-of-7 mb-25">
                         <h2>Deliverables</h2>
                         <ul>
                             <li>User Surveys</li>
@@ -46,8 +86,8 @@
                             <li>InVision Prototype</li>
                         </ul>
                     </div>
-                
-                    <div class="column">
+
+                    <div class="left col-2-of-7 mb-25">
                         <h2>Tools</h2>
                         <ul>
                             <li>Figma</li>
@@ -59,7 +99,7 @@
                         </ul>
                     </div>
 
-                    <div class="column">
+                    <div class="left col-2-of-7 mb-25">
                         <h2>Roles</h2>
                         <ul>
                             <li>UX Design</li>
@@ -67,228 +107,427 @@
                         </ul>
                     </div>
 
-                    <h2>The Problem</h2>
-                    <p>
-                        The cloud storage space is saturated with many different solutions focusing on many different things. 
-                        Some are heavily focused on file backup, and others on content creation or note taking. 
-                        Many users are accustomed to using multiple different platforms to achieve their goals, while some users also 
-                        confessed to using products with confusing user interfaces which inhibited them from from having a great overall experience.
-                    </p>
+                    <div class="cf"></div>
 
-                    <h2>The Solution</h2>
-                    <p>
-                        CloudBin takes the successful features of other storage platforms, and combines them to create a ‘one-stop-shop’ cloud storage service. 
-                        With separate customizable tabs for different types of media, you can easily find your documents, music, images, and links without having to surf through a jumble of your content.
-                        Upload multiple documents at once, and CloudBin will automatically sort your content into the appropriate tab based on the content’s extension type.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="theprocess">
-            <img src="./images/TheProcess.png" alt="process header">
-
-            <h2>User Research</h2>
-            <p>To begin the project, I started with a user survey to try and determine what the main features of my app would be. Some of the important questions I asked were:</p>
-            <ol>
-                <li> What tools were users currently using?</li>
-                <li>What were the users primarily using their cloud storage service or services for?</li>
-                <li>What users disliked most about their cloud storage service or services</li>
-                <li>How important were collaboration tools to users?</li>
-            </ol>
-
-            <h3>Key Takeaways</h3>
-            <div class="col-1-of-3">
-                <img src="./images/Takeaways75.png" alt="75 percent">
-                <p>Were primarily using their cloud storage services for accessing files across multiple devices</p>
-            </div>
-            <div class="col-1-of-3"> 
-                <img src="./images/Takeaways62.png" alt="62 percent">
-                <p>Were using their services for storing photos, document creation and collaborating with others</p>
-            </div>
-            <div class="col-1-of-3">
-                <img src="./images/Takeaways87.png" alt="87 percent">
-                <p>Said that they would use a collaboration tool if the platform had one</p>
-            </div>
-            <p>Based on all of these answers, I started to have an idea on the direction I wanted this project to go. I knew that creating an app that had many different features was important because users are already using multiple platforms, I wanted to create an app where users wouldn’t need to use a different app alongside mine.</p>
-
-            <h2>Competitive Analysis</h2>
-            <div class="grid">
-                <div class="grid-right col-1-of-3">
-                    <img src="./images/google-drive-logo-new.png" alt="google drive logo">
-                    <img src="./images/dropbox_2017_logo.png" alt="dropbox logo">  
-                    <img src="./images/pinterest.png" alt="pinterest logo">
-                </div>
-                <div class="grid-left col-2-of-3">
-                    <div class="column">
-                        <p>To further research the cloud storage space, I conducted a SWOT analysis of three large companies currently offering a cloud storage service of some sort: Dropbox, Pinterest, and Google Drive. Dropbox, Google Drive and Pinterest are three different services offering different robust features. While Dropbox and Google Drive are two of the most popular cloud storage services, both are different in their offerings. 
-
-                        A new cloud storage app could potentially build upon the social aspect of Pinterest, and the media storage aspect of Google Drive and Dropbox. The ability to allow users to create documents within the app, share and collaborate on them with other users, as well as the ability to save items they find interesting to a ‘dashboard’ that is viewable to others they are connected with on the app. 
+                    <div class="mt-50 pr-40-d">
+                        <h2>The Problem</h2>
+                        <p>
+                            The cloud storage space is saturated with many different solutions focusing on many
+                            different things.
+                            Some are heavily focused on file backup, and others on content creation or note taking.
+                            Many users are accustomed to using multiple different platforms to achieve their goals,
+                            while some users also
+                            confessed to using products with confusing user interfaces which inhibited them from from
+                            having a great overall experience.
                         </p>
+
+                        <br><br>
+
+                        <h2>The Solution</h2>
+                        <p>
+                            CloudBin takes the successful features of other storage platforms, and combines them to
+                            create a ‘one-stop-shop’ cloud storage service.
+                            With separate customizable tabs for different types of media, you can easily find your
+                            documents, music, images, and links without having to surf through a jumble of your
+                            content.
+                            Upload multiple documents at once, and CloudBin will automatically sort your content into
+                            the appropriate tab based on the content’s extension type.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="cf"></div>
+
+                <div class="mt-50">
+                    <h2>User Research</h2>
+                    <p>To begin the project, I started with a user survey to try and determine what the main features
+                        of my app would be. Some of the important questions I asked were:</p>
+                    <ol>
+                        <li> What tools were users currently using?</li>
+                        <li>What were the users primarily using their cloud storage service or services for?</li>
+                        <li>What users disliked most about their cloud storage service or services</li>
+                        <li>How important were collaboration tools to users?</li>
+                    </ol>
+
+                    <h3>Key Takeaways</h3>
+                    <div class="left col-1-of-3 mb-25">
+                        <div class="center">
+                            <img src="./images/Takeaways75.png" alt="75 percent">
+                        </div>
+                        <p class="takeaway-text">Were primarily using their cloud storage services for accessing files
+                            across multiple devices</p>
+                    </div>
+
+                    <div class="left col-1-of-3 mb-25">
+                        <div class="center">
+                            <img src="./images/Takeaways62.png" alt="62 percent">
+                        </div>
+                        <p class="takeaway-text">Were using their services for storing photos, document creation and
+                            collaborating with others</p>
+                    </div>
+
+                    <div class="left col-1-of-3 mb-25">
+                        <div class="center">
+                            <img src="./images/Takeaways87.png" alt="87 percent">
+                        </div>
+                        <p class="takeaway-text">Said that they would use a collaboration tool if the platform had one</p>
+                    </div>
+
+                    <div class="cf"></div>
+
+                    <p class="m-0">Based on all of these answers, I started to have an idea on the direction I wanted this project
+                        to go. I knew that creating an app that had many different features was important because users
+                        are already using multiple platforms, I wanted to create an app where users wouldn’t need to
+                        use a different app alongside mine.</p>
+                </div>
+
+                <div class="mt-50">
+                    <h2>Competitive Analysis</h2>
+                    <div class="mt-25">
+                        <div class="right col-1-of-3">
+                            <img src="./images/comp-logos.png" alt="competitive analysis logos" class="mw-100 mb-50">
+                        </div>
+                        <div class="left col-2-of-3 pr-40">
+                            <p class="m-0">To further research the cloud storage space, I conducted a SWOT analysis of
+                                three large companies currently offering a cloud storage service of some sort: Dropbox,
+                                Pinterest, and Google Drive. Dropbox, Google Drive and Pinterest are three different
+                                services offering different robust features. While Dropbox and Google Drive are two of
+                                the most popular cloud storage services, both are different in their offerings.
+                                <br><br>
+                                A new cloud storage app could potentially build upon the social aspect of Pinterest,
+                                and the media storage aspect of Google Drive and Dropbox. The ability to allow users to
+                                create documents within the app, share and collaborate on them with other users, as
+                                well as the ability to save items they find interesting to a ‘dashboard’ that is
+                                viewable to others they are connected with on the app.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="cf"></div>
+                </div>
+
+                <div class="mt-50">
+                    <h2>User Personas</h2>
+                    <p>After getting an understanding of competitors in the space, I needed to conduct a few interviews
+                        with some of the respondents from the user survey to really get an idea of who my target
+                        audience is and what they are looking for. After conducting these interviews, I came up with
+                        two user personas: the young professional, and the student.
+                    </p>
+
+                    <div class="left col-1-of-2 mt-25">
+                        <img src="./images/Max-user-persona.png" alt="max user persona" class="mw-100">
+                    </div>
+                    <div class="left col-1-of-2 mt-25">
+                        <img src="./images/Stefan-user-persona.png" alt="stefan user persona" class="mw-100">
+                    </div>
+
+                    <div class="cf"></div>
+                </div>
+
+                <div class="mt-50">
+                    <h2>User Flows</h2>
+                    <p>After finishing my user research, it was time to begin thinking about the important features I
+                        would be applying to my app. Based on the answers I received from my survey and user
+                        interviews/personas, I knew the high priority user stories would need to be uploading items,
+                        content creation, collaboration, file access across devices. I then created a series of user
+                        flows based on all of the highly prioritized stories.
+                    </p>
+                    <div class="left col-1-of-2 mt-25 mb-25-d center">
+                        <img src="./images/Userflow1.png" alt="upload document userflow" class="mw-100 border">
+                    </div>
+                    <div class="left col-1-of-2 mt-25 mb-25">
+                        <img src="./images/Userflow2.png" alt="collaborate user flow" class="mw-100 border">
+                    </div>
+                    <div class="full-width center mt-25">
+                        <img src="./images/Userflow3.png" alt="organize content user flow" class="mw-100 border">
+                    </div>
+                </div>
+
+                <div class="mt-50">
+                    <h2>Wireframes</h2>
+                    <p>Once I had all the most important features figured out, I began my wireframes. I first started
+                        on paper by roughly drawing out my ideas for the layout of several different pages. The
+                        sketches were pretty bare, but I wanted to try and get my ideas down as quickly as they were
+                        coming to me. Finally, I brought the rough sketches to life by creating the digital wireframes
+                        on Figma. From here I was able to fully map out my pages by utilizing the user flows and user
+                        stories.
+                    </p>
+                    <div class="mt-50 mb-25">
+                        <div class="left col-1-of-2 pr-25">
+                            <img src="./images/LandingPage3.png" alt="CloudBin landing page wireframe" class="mw-100 border mb-25">
+                            <img src="./images/SignIn.png" alt="Sign In wireframe" class="mw-100 border mb-25">
+                            <img src="./images/SignUp.png" alt="Sign up wireframe" class="mw-100 border mb-25">
+                        </div>
+                        <div class="right col-1-of-2 pl-25">
+                            <img src="./images/Dashboard.png" alt="dashboard wireframe" class="mw-100 border mb-25">
+                            <img src="./images/NewDocument.png" alt="new document wireframe" class="mw-100 border mb-25">
+                            <img src="./images/Share.png" alt="share wireframe" class="mw-100 border mb-25">
+                            <img src="./images/StoreWebItems.png" alt="store links wireframe" class="mw-100 border mb-25">
+                        </div>
+                        <div class="cf"></div>
                     </div>
                 </div>
             </div>
 
-            <h2>User Personas</h2>
-            <p>After getting an understanding of competitors in the space, I needed to conduct a few interviews with some of the respondents from the user survey to really get an idea of who my target audience is and what they are looking for. After conducting these interviews, I came up with two user personas: the young professional, and the student. 
-            </p>
-
-            <div class="col-1-of-2">
-                <img src="./images/Max-user-persona.png" alt="max user persona">
-            </div>
-            <div class="col-1-of-2">
-                <img src="./images/Stefan-user-persona.png" alt="stefan user persona">
-            </div>
-
-            <h2>User Flows</h2>
-            <p>After finishing my user research, it was time to begin thinking about the important features I would be applying to my app. Based on the answers I received from my survey and user interviews/personas, I knew the high priority  user stories would need to be uploading items,  content creation, collaboration, file access across devices. I then created a series of user flows based on all of the highly prioritized stories. 
-            </p>
-            <div class="grid">
-                <div class="grid-left col-1-of-2">
-                    <img src="./images/Userflow1.png" alt="upload document userflow">
-                </div>
-                <div class="grid-right col-1-of-2">
-                    <img src="./images/Userflow2.png" alt="collaborate user flow">
-                </div>
-                <div class="grid-center col-1-of-1">
-                    <img src="./images/Userflow3.png" alt="organize content user flow">
-                </div>
-            </div>
-
-            <h2>Wireframes</h2>
-            <p>Once I had all the most important features figured out, I began my wireframes. I first started on paper by roughly drawing out my ideas for the layout of several different pages. The sketches were pretty bare, but I wanted to try and get my ideas down as quickly as they were coming to me. Finally, I brought the rough sketches to life by creating the digital wireframes on Figma. From here I was able to fully map out my pages by utilizing the user flows and user stories.
-            </p>
-            <div class="grid">
-                <div class="grid-left col-1-of-2">
-                    <img src="./images/LandingPage3.png" alt="CloudBin landing page wireframe" >
-                    <img src="./images/SignIn.png" alt="Sign In wireframe">
-                    <img src="./images/SignUp.png" alt="Sign up wireframe">
-                </div>
-                <div class="grid-right col-1-of-2">
-                    <img src="./images/Dashboard.png" alt="dashboard wireframe">
-                    <img src="./images/NewDocument.png" alt="new document wireframe">
-                    <img src="./images/Share.png" alt="share wireframe">
-                    <img src="./images/StoreWebItems.png" alt="store links wireframe">
-                </div>
-            </div>
         </section>
-       
-        <section class="section" id="branding">
-            <img src="./images/Branding.png" alt="branding header">
-            
-            <h2>Brand Name & Logo Design</h2>
-            <p>I drew up a list with the words cloud and storage at the top. I thought of a few words I associated with the word cloud as well as a couple more for storage. I wrote down the word bin and it  hit me, CloudBin. I wanted a name that would explain what the product is, but not make it too literal.
-            </p>
 
-            <img src="./images/CloudbinSketches.png" alt="cloudbin sketches">
+        <section class="section project-text" data-anchor="branding-section">
+            <img src="./images/Branding.png" alt="branding header" class="full-width">
+            <div class="container mt-50 mb-50">
 
-            <p>The logo design was the part of branding I had the most difficulty with. I tried a ton of different variations of designs with boxes, clouds, clouds with boxes etc. I ended up with a couple variations of a cloud bubble either on top of the word CloudBin, or trailing it. The final result utilized different colors for different backgrounds. Out of everything I designed, the logo was one of the main things I would design differently if I had the time.
-            </p>
-            <div class="grid">
-                <div class="grid-center col-1-of-1">
-                    <img src="./images/LogoDesigns.png" alt="logo designs">
-                </div>
-            </div>
-
-            <h2>Color Palette & Fonts</h2>
-            <p>I chose a few different shades of blue, from a dark navy color, to a lighter pale blue. I also included a bright raspberry red color that I had intended to be primarily used in certain call to action buttons as well as the logo. Although I did use this bright color in my first iterations of my app, the final version does not use it. After testing with some users, they felt the color made it seem that those call to action buttons were throwing an error because of the intense redness of the color.
-            </p>
-            <div class="grid">
-                <div class="grid-left col-1-of-2">
-                    <img src="./images/Ellipse.png" alt="Prussian Blue Ellipse">
-                        <p>Prussian Blue<br>#083553<br></p>
-                    <img src="./images/Ellipse-1.png" alt="B'dazzled blue ellipse">
-                        <p>B'dazzled Blue<br>#244F93<br></p>
-                </div>
-                <div class="grid-right col-1-of-2">
-                    <img src="./images/Ellipse-2.png" alt="cornflower blue ellipse">
-                        <p>Pale Cornflower Blue<br>#ABCEEA<br></p>
-                    <img src="./images/Ellipse-3.png" alt="rusty red ellipse">
-                        <p>Rusty Red<br>#DD3044<br></p>
-                </div>
-                <div class="grid-left col-1-of-2">
-                    <img src="./images/ViceCity.png" alt="sign in gradient">
-                    <p>Sign up/Sign in gradient</p>
-                </div>
-                <div class="grid-right col-1-of-2">
-                    <img src="./images/VisionsofGrandeur.png" alt="landing page gradient">
-                    <p>Landing page gradient</p>
-                </div>
-            </div>
-
-            <p>For the primary font, I chose a bolder font called DIN Alternate and a lighter font for the body copy called Source Sans Pro. Both are simple and sans-serif fonts, but the boldness of DIN Alternate pairs well with the lighter Source Sans. 
-            </p>
-
-            <div class="grid">
-                <div class="grid-left col-1-of-2">
-                    <img src="./images/DINAlternate.png" alt="DIN Alternate font">
-                </div>
-                <div class="grid-right col-1-of-2">
-                    <img src="./images/SourceSansPro.png" alt="source sans pro font">
-                </div>
-            </div>
-
-            <h2>High Fid</h2>
-
-            <p>Some text</p>
-
-            <div class="hide-on-mobile">
-                <img src="./images/DashboardArrow.png" alt="dashboard design">
-                <img src="./images/NavBarArrow.png" alt="navbar design">
-                <img src="./images/ShareArrow.png" alt="share design">
-            </div>
-
-            <div class="show-on-mobile">
-                <img src="./images/Dashboard-1.png" alt="first dashboard design">
-                <p>My first designs had all the content tabs located at the top with confusing upload icons next to the name of the tabs. For my preference tests, I decided to change the styling of left side nav bar, the background color of my web app, and the share/cancel button on the share pop up. 
-                </p>
-                <img src="./images/Dashboard-1.png" alt="first nav bar design">
-                <p>For the left side nav bar, I wanted to see if the arrow indicator made sense to users. I tried changing it by getting rid of the arrow and instead highlighting the “Files” word on the nav bar. 70% of respondents liked the original design with the arrow, some stating it’s a cleaner look and makes it more obvious which page you’re on. Some also made a good point saying the red color comes across as an error or alert that signals something is wrong. In hindsight, I shouldn’t have tried using that red color.</p>
-                <img src="./images/Share2.png" alt="first share box design">
-                <p>For the design of the share pop up, I wanted to test a simple design of the share/cancel button to see if users thought the original button design was too dark. 70% of people liked my original dark design stating that the button is clearer, easier to see, and looks more action oriented. 
+                <h2>Brand Name & Logo Design</h2>
+                <p>I drew up a list with the words cloud and storage at the top. I thought of a few words I associated
+                    with the word cloud as well as a couple more for storage. I wrote down the word bin and it hit me,
+                    CloudBin. I wanted a name that would explain what the product is, but not make it too literal.
                 </p>
             </div>
 
-            <p>After conducting these preference tests, I still felt the design was lacking and needed more uniformity. I created a few more iterations and finally decided on a final design where the side nav held the content tabs and the top tabs were used to toggle between your files, collaborators and settings.
-            </p>
+            <img src="./images/CloudbinSketches.png" alt="cloudbin sketches" class="full-width">
 
-            <div class="grid">
-                <div class="grid col-1-of-2">
-                    <img src="./images/NewDashboard2.png" alt="final dashboard design">
-                    <img src="./images/Create.png" alt="final create design">
-                    <img src="./images/PhotosPage.png" alt="final photo page design">
-                    <img src="./images/Collaborators.png" alt="final collaborators design">
+            <div class="container mt-50 mb-25">
+
+                <p>The logo design was the part of branding I had the most difficulty with. I tried a ton of different
+                    variations of designs with boxes, clouds, clouds with boxes etc. I ended up with a couple
+                    variations of a cloud bubble either on top of the word CloudBin, or trailing it. The final result
+                    utilized different colors for different backgrounds. Out of everything I designed, the logo was one
+                    of the main things I would design differently if I had the time.
+                </p>
+
+                <div class="center mt-50">
+                    <img src="./images/LogoDesigns.png" alt="logo designs" class="mw-100">
                 </div>
-                <div class="grid col-1-of-2">
-                    <img src="./images/Documents.png" alt="final documents design">
-                    <img src="./images/CreateShare.png" alt="final create/share design">
-                    <img src="./images/Links.png" alt="final links design">
-                    <img src="./images/Collaborators2.png" alt="final second page collaborators deisgn">
+
+                <div class="mt-50">
+                    <h2>Color Palette & Fonts</h2>
+                    <p>I chose a few different shades of blue, from a dark navy color, to a lighter pale blue. I also
+                        included a bright raspberry red color that I had intended to be primarily used in certain call
+                        to
+                        action buttons as well as the logo. Although I did use this bright color in my first iterations
+                        of
+                        my app, the final version does not use it. After testing with some users, they felt the color
+                        made
+                        it seem that those call to action buttons were throwing an error because of the intense redness
+                        of
+                        the color.
+                    </p>
+                </div>
+
+                <div class="left col-1-of-4 mt-50">
+                    <div class="center">
+                        <img src="./images/Ellipse.png" alt="Prussian Blue Ellipse">
+                        <p class="takeaway-text">Prussian Blue<br>#083553<br></p>
+                    </div>
+                </div>
+
+                <div class="left col-1-of-4 mt-50">
+                    <div class="center">
+                        <img src="./images/Ellipse-1.png" alt="B'dazzled blue ellipse">
+                        <p class="takeaway-text">B'dazzled Blue<br>#244F93<br></p>
+                    </div>
+                </div>
+
+                <div class="left col-1-of-4 mt-50">
+                    <div class="center">
+                        <img src="./images/Ellipse-2.png" alt="cornflower blue ellipse">
+                        <p class="takeaway-text">Pale Cornflower Blue<br>#ABCEEA<br></p>
+                    </div>
+                </div>
+
+                <div class="left col-1-of-4 mt-50">
+                    <div class="center">
+                        <img src="./images/Ellipse-3.png" alt="rusty red ellipse">
+                        <p class="takeaway-text">Rusty Red<br>#DD3044<br></p>
+                    </div>
+                </div>
+
+                <div class="left center col-1-of-2 mt-50">
+                    <img src="./images/ViceCity.png" alt="sign in gradient" class="mw-100">
+                    <p class="takeaway-text">Sign up/Sign in gradient</p>
+                </div>
+
+                <div class="left center col-1-of-2 mt-50">
+                    <img src="./images/VisionsofGrandeur.png" alt="landing page gradient" class="mw-100">
+                    <p class="takeaway-text">Landing page gradient</p>
+                </div>
+
+                <div class="cf"></div>
+
+                <div class="mt-50">
+                    <p>For the primary font, I chose a bolder font called DIN Alternate and a lighter font for the body
+                        copy called Source Sans Pro. Both are simple and sans-serif fonts, but the boldness of DIN
+                        Alternate pairs well with the lighter Source Sans.
+                    </p>
+                </div>
+
+                <div class="mt-50">
+                    <div class="left col-1-of-2 p-15">
+                        <img src="./images/DINAlternate.png" class="mw-100" alt="DIN Alternate font">
+                    </div>
+
+                    <div class="right col-1-of-2 p-15">
+                        <img src="./images/SourceSansPro.png" class="mw-100" alt="source sans pro font">
+                    </div>
+
+                    <div class="cf"></div>
+                </div>
+
+                <div class="mt-50">
+                    <h2>High Fidelity Mockups</h2>
+                    <div class="hide-on-mobile">
+                        <div class="mb-50 mt-50">
+                            <img src="./images/DashboardArrow.png" alt="dashboard design" class="mw-100">
+                        </div>
+                        <div class="mb-50 mt-50">
+                            <img src="./images/NavBarArrow.png" alt="navbar design" class="mw-100">
+                        </div>
+                        <div class="mb-50 mt-50">
+                            <img src="./images/ShareArrow.png" alt="share design" class="mw-100">
+                        </div>
+                    </div>
+                    <div class="hide-on-desktop">
+                        <div class="mt-50 mb-50">
+                            <img src="./images/Dashboard-1.png" alt="first dashboard design" class="mw-100">
+                            <p>My first designs had all the content tabs located at the top with confusing upload icons
+                                next to the name of the tabs. For my preference tests, I decided to change the styling
+                                of
+                                left side nav bar, the background color of my web app, and the share/cancel button on
+                                the
+                                share pop up.
+                            </p>
+                        </div>
+
+                        <div class="mt-50 mb-50">
+                            <img src="./images/Dashboard-1.png" alt="first nav bar design" class="mw-100">
+                            <p>For the left side nav bar, I wanted to see if the arrow indicator made sense to users. I
+                                tried changing it by getting rid of the arrow and instead highlighting the “Files” word
+                                on
+                                the nav bar. 70% of respondents liked the original design with the arrow, some stating
+                                it’s
+                                a cleaner look and makes it more obvious which page you’re on. Some also made a good
+                                point
+                                saying the red color comes across as an error or alert that signals something is wrong.
+                                In
+                                hindsight, I shouldn’t have tried using that red color.</p>
+                        </div>
+
+                        <div class="mt-50 mb-50">
+                            <img src="./images/Share2.png" alt="first share box design" class="mw-100">
+                            <p>For the design of the share pop up, I wanted to test a simple design of the share/cancel
+                                button to see if users thought the original button design was too dark. 70% of people
+                                liked
+                                my original dark design stating that the button is clearer, easier to see, and looks
+                                more
+                                action oriented.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-50">
+                    <p>After conducting these preference tests, I still felt the design was lacking and needed more
+                        uniformity. I created a few more iterations and finally decided on a final design where the
+                        side nav held the content tabs and the top tabs were used to toggle between your files,
+                        collaborators and settings.
+                    </p>
+                    <div class="mt-50 mb-25">
+                        <div class="left col-1-of-2 pr-25">
+                            <img src="./images/NewDashboard2.png" class="mw-100 mb-25" alt="final dashboard design">
+                            <img src="./images/Create.png" class="mw-100 mb-25" alt="final create design">
+                            <img src="./images/PhotosPage.png" class="mw-100 mb-25" alt="final photo page design">
+                            <img src="./images/Collaborators.png" class="mw-100 mb-25" alt="final collaborators design">
+                        </div>
+                        <div class="right col-1-of-2 pl-25">
+                            <img src="./images/Documents.png" class="mw-100 mb-25" alt="final documents design">
+                            <img src="./images/CreateShare.png" class="mw-100 mb-25" alt="final create/shar1e design">
+                            <img src="./images/Links.png" class="mw-100 mb-25" alt="final links design">
+                            <img src="./images/Collaborators2.png" class="mw-100 mb-25" alt="final second page collaborators deisgn">
+                        </div>
+                        <div class="cf"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="conclusion">
-                <img src="./images/Conclusion.png" alt="conclusion header">
+        <section class="section project-text" data-anchor="conclusion-section">
+            <div class="conclusion-header">
+                <img src="./images/Conclusion.png" class="full-width" alt="conclusion header">
+                <div class="container mt-50 mb-50">
 
-            <h2>What I learned and what I would do differently</h2>
+                    <h2>What I learned and what I would do differently</h2>
 
-            <p>I started this project with very little working knowledge of how much goes into user research. Looking back, I realize that my user survey could have asked questions in a way where I could get better, more actionable data. Some questions could have been asked as a linear scale (how important is collaboration to you) rather than a check box or multiple choice question. It also became apparent to me throughout this project that the process from research to design development takes a very very long time, and the more user testing you conduct, the better. I know for my next project that user testing will take a much more integral part in my process. I see now that if I had tested different aspects of my design more frequently that it would have taken the guesswork out of it and would have allowed me to get to my final design much quicker. 
+                    <p>I started this project with very little working knowledge of how much goes into user research.
+                        Looking back, I realize that my user survey could have asked questions in a way where I could
+                        get
+                        better, more actionable data. Some questions could have been asked as a linear scale (how
+                        important
+                        is collaboration to you) rather than a check box or multiple choice question. It also became
+                        apparent to me throughout this project that the process from research to design development
+                        takes a
+                        very very long time, and the more user testing you conduct, the better. I know for my next
+                        project
+                        that user testing will take a much more integral part in my process. I see now that if I had
+                        tested
+                        different aspects of my design more frequently that it would have taken the guesswork out of it
+                        and
+                        would have allowed me to get to my final design much quicker.
 
-            If I had more time on this project, I would have spent considerably more time on the logo design. I’m still not completely content with how it turned out, and I’m sure I could come up with something a bit more appealing. 
-            Overall, I am proud of how hard I pushed myself on this project. I didn’t know the tools I used very well and I am really excited to start my next project and utilize all my newfound knowledge and create something I am really excited and proud of. 
-            </p>
-       
-            <section class="section fp-auto-height" id="footer">
-            <div id="footer-content">
-                <h2>Want to connect?</h2>
-                    <a href="mailto:sally.tugendman3@gmail.com">sally.tugendman3@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/stugendman">LinkedIn</a>
-                    <a href="https://github.com/sally2gendman/">Github</a>
-                    <a href="./Resume.pdf">Resume</a>
+                        If I had more time on this project, I would have spent considerably more time on the logo
+                        design.
+                        I’m still not completely content with how it turned out, and I’m sure I could come up with
+                        something a bit more appealing.
+                        Overall, I am proud of how hard I pushed myself on this project. I didn’t know the tools I used
+                        very well and I am really excited to start my next project and utilize all my newfound
+                        knowledge
+                        and create something I am really excited and proud of.
+                    </p>
+                </div>
             </div>
-            </section>
+        </section>
+
+        <section class="section fp-auto-height center" id="footer" data-anchor="footer-section">
+            <div class="container" id="footer-content">
+                <h1>Want to connect?</h1>
+                <div class="mt-50">
+                    <a href="mailto:sally.tugendman3@gmail.com" class="contact-links"><img src="./images/envelope.png"></a>
+                    <a href="https://www.linkedin.com/in/stugendman" class="contact-links"><img src="./images/linkedin.png"></a>
+                    <a href="https://github.com/sally2gendman/" class="contact-links"><img src="./images/github.png"></a>
+                </div>
+
+                <p class="mt-50">© 2018 Designed and Coded by Sally Tugendman</p>
+            </div>
         </section>
     </main>
+
+    <script src="./js/scrolloverflow.js"></script>
+    <script src="./js/fullpage.min.js"></script>
+    <script src="./js/fullpage.extensions.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+            scrollOverflow: true,
+            afterRender: function () {
+                var desktopFooterLink = document.getElementById('desktop-footer-link');
+                var mobileFooterLink = document.getElementById('mobile-footer-link');
+                var headerButton = document.getElementById('js-mobile-header-button');
+
+                desktopFooterLink.onclick = function (e) {
+                    e.preventDefault();
+                    fullpage_api.moveTo('footer-section');
+                }
+                mobileFooterLink.onclick = function (e) {
+                    e.preventDefault();
+                    fullpage_api.moveTo('footer-section');
+                }
+                headerButton.onclick = function (e) {
+                    e.preventDefault();
+                    $('.mobile-header-links').slideToggle('slow');
+                    headerButton.classList.toggle('is-active');
+                }
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </body>
+
 </html>
