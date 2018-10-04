@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sally Tugendman Portfolio</title>
+    <title>Sally Tugendman - Online Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css"/>
     <link href="./css/hamburgers.css" rel="stylesheet">
@@ -18,7 +18,8 @@
 <body>
     <main id="fullpage">
 
-        <section class="section" id="about" data-anchor="about-section">
+        <section class="section fp-section active fp-table fp-completely" id="about"  style="height: 100vh;">
+            <div class="fp-tableCell" style="height: 100vh;">
             <header>
                 <div class="hide-on-desktop">
                     <img src="./images/header-logo.png" class="header-logo" alt="logo">
@@ -36,7 +37,7 @@
                         <!-- <hr> -->
                         <a href="./Resume.pdf" class="header-link">Resume</a>
                         <!-- <hr> -->
-                        <a href="" class="header-link" id="mobile-footer-link">Contact</a>
+                            <a href="#footer" class="header-link" id="mobile-footer-link">Contact</a>
                     </nav>
                 </div>
                 <div class="hide-on-mobile">
@@ -46,7 +47,7 @@
                         <a href="./about" class="header-link">About</a>
                         <a href="./project" class="header-link">Work</a>
                         <a href="./Resume.pdf" class="header-link">Resume</a>
-                        <a href="" class="header-link" id="desktop-footer-link">Contact</a>
+                            <a href="#footer" class="header-link" id="desktop-footer-link">Contact</a>
                     </nav>
                 </div>
             </header>
@@ -57,17 +58,17 @@
                 I create exciting, sensible digital experiences while always keeping the user in mind.<br><br>
                 It’s nice to meet you!</h3>
             </div>
+            </div>
         </section>
 
-        <section class="section" id="work" data-anchor="work-section">
-            <div class="container mt-50 mb-50">
-                <h1 class="center mb-50">Work</h1>
+        <section class="section fp-section fp-table active fp-completely" id="work"  style="height:100vh;">
+            <div class="fp-tableCell" style="height: 100vh;">
+                <div class="container mt-50">
+                    <h1 class="center mb-75">Work</h1>
 
-                <div class="left mt-50 mb-50">
-                    <div class="left col-3-of-5">
-                        <img src="./images/Group.png" alt="CloudBin on laptop" class="mw-100 mb-50">
-                    </div>
-                    <div class="left col-2-of-5">
+                    <div class="mt-50 mb-50">
+                        <img src="./images/Group.png" alt="CloudBin on laptop" class="mw-100 center-image">
+                        <div class="mt-50 center relative-container">
                         <h2>CloudBin</h2>
                         <hr>
                         <div class="mb-30">
@@ -77,37 +78,45 @@
                         <a href="/project.html" class="button">Read Case Study</a>
                     </div>
                 </div>
+                </div>
+            </div>
+        </section>
 
-                <div class="left mt-50 mb-50">
-                    <div class="left col-2-of-5 mb-50">
-                        <img src="./images/Phonescopy.png" alt="iPhone" class="center-image hide-on-desktop mw-100 mb-50">
+        <section class="section fp-section fp-table active fp-completely" id="work2"  style="height: 100vh;">
+            <div class="fp-tableCell" style="height: 100vh;">
+                <div class="container">
+                    <div class="mt-50 mb-50">
+
+                        <img src="./images/Phonescopy.png" alt="iPhone" class="mw-100 center-image">
+                        <div class="mt-50 center relative-container">
                         <h2>Beauty Reviews</h2>
                         <hr>
                         <div class="mb-30">
                             <p class="italic">RESEARCH - BRANDING - WIREFRAMES<br>Hi-FIDELITY MOCKUPS - PROTOTYPES</p>
                             <p>Mobile application that allows users to post reviews on various makeup, skincare and beauty items.</p>
                         </div>
-                        <span class="button">Coming Soon</span>
+                            <a href="#" class="button">Coming Soon</a>
                     </div>
-                    <div class="left col-3-of-5 hide-on-mobile">
-                        <img src="./images/Phonescopy.png" alt="iPhone" class="center-image mw-100">
+
                     </div>
                 </div>
             </div>
         </section>
 
 
-        <section class="section" id="photography" data-anchor="photos-section">
+        <section class="section fp-section fp-table active fp-completely" id="photography"  style="height:100vh;">
+            <div class="fp-tableCell" style="height: 100vh;">
             <div class="container mt-50 mb-50">
                 <h1 class="center mb-50">Photography</h1>
-                <div class="container mt-50 mb-50">
+                    <div class="relative-container mt-50 mb-50">
                     <p>My path to digital design began with photography (read more about that <a href="./about.html">here</a>). Here is a collection of my work, both in digital and black & white film.</p>
                 </div>
                 <img src="./images/photocollage-01.png" alt="Photo Collage" class="mw-100 center-image">
             </div>
+            </div>
         </section>
 
-        <section class="section fp-auto-height center" id="footer" data-anchor="footer-section">
+        <section class="section fp-auto-height center" id="footer">
             <div class="container" id="footer-content">
                 <h1>Want to connect?</h1>
                 <div class="mt-50">
@@ -121,36 +130,15 @@
         </section>
     </main>
 
-    <script src="./js/scrolloverflow.js"></script>
-    <script src="./js/fullpage.min.js"></script>
-    <script src="./js/fullpage.extensions.min.js"></script>
-    <script>
-        new fullpage('#fullpage', {
-            licenseKey:'OPEN-SOURCE-GPLV3-LICENSE',
-            scrollOverflow: true,
-            afterRender: function() {
-                var desktopFooterLink = document.getElementById('desktop-footer-link');
-                var mobileFooterLink = document.getElementById('mobile-footer-link');
-                var headerButton = document.getElementById('js-mobile-header-button');
-
-                desktopFooterLink.onclick = function(e) {
-                    e.preventDefault();
-                    fullpage_api.moveTo('footer-section');
-                }
-                mobileFooterLink.onclick = function(e) {
-                    e.preventDefault();
-                    fullpage_api.moveTo('footer-section');
-                }
-                headerButton.onclick = function(e) {
-                    e.preventDefault();
-                    $('.mobile-header-links').slideToggle('slow');
-                    headerButton.classList.toggle('is-active');
-                }
-            }
-        });
-    </script>
-
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        var headerButton = document.getElementById('js-mobile-header-button');
+        headerButton.onclick = function(e) {
+            e.preventDefault();
+            $('.mobile-header-links').slideToggle('slow');
+            headerButton.classList.toggle('is-active');
+        }
+    </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126457715-1"></script>

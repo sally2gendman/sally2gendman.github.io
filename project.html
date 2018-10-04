@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sally Tugendman Portfolio</title>
+    <title>Sally Tugendman - Project Case Study</title>
     <link rel="stylesheet" type="text/css" href="./css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css" />
     <link href="./css/hamburgers.css" rel="stylesheet">
@@ -19,54 +19,57 @@
 <body>
     <main id="fullpage">
 
-        <section class="section" id="project-page" data-anchor="landing">
-            <header>
-                <div class="hide-on-desktop">
-                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
-                    <span class="hamburger hamburger--squeeze" id="js-mobile-header-button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
+        <!-- <section class="section" id="project-page" data-anchor="landing"> -->
+        <section class="section fp-section active fp-table fp-completely" id="project-page"  style="height: 100vh;">
+            <div class="fp-tableCell" style="height: 100vh;">
+                <header>
+                    <div class="hide-on-desktop">
+                        <img src="./images/header-logo.png" class="header-logo" alt="logo">
+                        <span class="hamburger hamburger--squeeze" id="js-mobile-header-button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
                         </span>
-                    </span>
-                    <nav class="project-mobile-header-links mobile-header-links" style="display: none;">
-                        <a href="./" class="header-link">Home</a>
-                        <!-- <hr> -->
-                        <a href="./about" class="header-link">About</a>
-                        <!-- <hr> -->
-                        <a href="./project" class="header-link">Work</a>
-                        <!-- <hr> -->
-                        <a href="./Resume.pdf" class="header-link">Resume</a>
-                        <!-- <hr> -->
-                        <a href="" class="header-link" id="mobile-footer-link">Contact</a>
-                    </nav>
-                </div>
-                <div class="hide-on-mobile">
-                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
-                    <nav class="header-links">
-                        <a href="./" class="header-link">Home</a>
-                        <a href="./about" class="header-link">About</a>
-                        <a href="./project" class="header-link">Work</a>
-                        <a href="./Resume.pdf" class="header-link">Resume</a>
-                        <a href="" class="header-link" id="desktop-footer-link">Contact</a>
-                    </nav>
-                </div>
-            </header>
+                        <nav class="project-mobile-header-links mobile-header-links" style="display: none;">
+                            <a href="./" class="header-link">Home</a>
+                            <!-- <hr> -->
+                            <a href="./about" class="header-link">About</a>
+                            <!-- <hr> -->
+                            <a href="./project" class="header-link">Work</a>
+                            <!-- <hr> -->
+                            <a href="./Resume.pdf" class="header-link">Resume</a>
+                            <!-- <hr> -->
+                            <a href="" class="header-link" id="mobile-footer-link">Contact</a>
+                        </nav>
+                    </div>
+                    <div class="hide-on-mobile">
+                        <img src="./images/header-logo.png" class="header-logo" alt="logo">
+                        <nav class="header-links">
+                            <a href="./" class="header-link">Home</a>
+                            <a href="./about" class="header-link">About</a>
+                            <a href="./project" class="header-link">Work</a>
+                            <a href="./Resume.pdf" class="header-link">Resume</a>
+                            <a href="" class="header-link" id="desktop-footer-link">Contact</a>
+                        </nav>
+                    </div>
+                </header>
 
-            <div class="container center mt-150 mb-150">
-                <h1>CloudBin</h1>
-                <h3 class="cloudbin-info">CloudBin is a cloud storage platform that provides users with a seamless
-                    experience that focuses on content organization and user collaboration.</h3>
-                <div class="laptop">
-                    <img src="./images/Group.png" alt="cloudbin laptop" class="mw-100">
-                </div>
-                <div class="full-width center">
-                    <a href="https://invis.io/XJMM9APSFY7" class="view-prototype">View Prototype</a>
+
+                <div class="container center mt-125 mb-50">
+                    <h1>CloudBin</h1>
+                    <h3 class="cloudbin-info">CloudBin is a cloud storage platform that provides users with a seamless experience that focuses on content organization and user collaboration.</h3>
+                    <div class="laptop">
+                        <img src="./images/Group.png" alt="cloudbin laptop" class="mw-100">
+                    </div>
+                    <div class="full-width center" style="margin-bottom: 40px;">
+                        <a href="https://invis.io/XJMM9APSFY7" class="view-prototype">View Prototype</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="section project-text" data-anchor="process-section">
-            <img src="./images/TheProcess.png" alt="process header" class="full-width">
+            <img src="./images/TheProcess.png" alt="process header" class="full-width" style="margin-top: -2px;">
             <div class="container mt-50 mb-25">
 
                 <div class="right col-1-of-4-d mb-25 center">
@@ -143,8 +146,7 @@
 
                 <div class="mt-50">
                     <h2>User Research</h2>
-                    <p>To begin the project, I started with a user survey to try and determine what the main features
-                        of my app would be. Some of the important questions I asked were:</p>
+                    <p>To begin the project, I started with a user survey to try and determine what the main features of my app would be. Some of the important questions I asked were:</p>
                     <ol>
                         <li> What tools were users currently using?</li>
                         <li>What were the users primarily using their cloud storage service or services for?</li>
@@ -154,24 +156,28 @@
 
                     <h3>Key Takeaways</h3>
                     <div class="left col-1-of-3 mb-25">
-                        <div class="center">
-                            <img src="./images/Takeaways75.png" alt="75 percent">
+                        <div style="width: 178px; height: 178px; margin: 0 auto; position: relative;">
+                            <div class="chart-label">75%</div>
+                            <canvas id="seventyFiveChart"></canvas>
                         </div>
+                            <!-- <img src="./images/Takeaways75.png" alt="75 percent"> -->
                         <p class="takeaway-text">Were primarily using their cloud storage services for accessing files
                             across multiple devices</p>
                     </div>
 
                     <div class="left col-1-of-3 mb-25">
-                        <div class="center">
-                            <img src="./images/Takeaways62.png" alt="62 percent">
+                        <div style="width: 178px; height: 178px; margin: 0 auto; position: relative;">
+                            <div class="chart-label">62%</div>
+                            <canvas id="sixtyTwoChart"></canvas>
                         </div>
                         <p class="takeaway-text">Were using their services for storing photos, document creation and
-                            collaborating with others</p>
+                            collaboration</p>
                     </div>
 
                     <div class="left col-1-of-3 mb-25">
-                        <div class="center">
-                            <img src="./images/Takeaways87.png" alt="87 percent">
+                        <div style="width: 178px; height: 178px; margin: 0 auto; position: relative;">
+                            <div class="chart-label">87%</div>
+                            <canvas id="eightySevenChart"></canvas>
                         </div>
                         <p class="takeaway-text">Said that they would use a collaboration tool if the platform had one</p>
                     </div>
@@ -184,11 +190,15 @@
                         use a different app alongside mine.</p>
                 </div>
 
+                    <div class="full-width center mb-75 mt-75">
+                            <a href="https://goo.gl/forms/OtTHR4XMPxCm9SPA3" class="view-materials btn">View Survey</a>
+                    </div>
+
                 <div class="mt-50">
                     <h2>Competitive Analysis</h2>
                     <div class="mt-25">
                         <div class="right col-1-of-3">
-                            <img src="./images/comp-logos.png" alt="competitive analysis logos" class="mw-100 mb-50">
+                            <img src="./images/comp-logos.png" alt="competitive analysis logos" class="mw-100 mb-50" style="max-height: 400px">
                         </div>
                         <div class="left col-2-of-3 pr-40">
                             <p class="m-0">To further research the cloud storage space, I conducted a SWOT analysis of
@@ -208,6 +218,9 @@
 
                     <div class="cf"></div>
                 </div>
+                <div class="full-width center mb-75 mt-75">
+                        <a href="https://goo.gl/forms/OtTHR4XMPxCm9SPA3" class="view-materials btn">View Competitive Analysis</a>
+                </div>
 
                 <div class="mt-50">
                     <h2>User Personas</h2>
@@ -216,15 +229,28 @@
                         audience is and what they are looking for. After conducting these interviews, I came up with
                         two user personas: the young professional, and the student.
                     </p>
+                    <div class="hide-on-mobile">
 
-                    <div class="left col-1-of-2 mt-25">
-                        <img src="./images/Max-user-persona.png" alt="max user persona" class="mw-100">
+                        <div class="left col-1-of-2 mt-25 pr-50">
+                            <img src="./images/MaxPersona.png" alt="max user persona" class="mw-100">
+                        </div>
+                        <div class="left col-1-of-2 mt-25 pl-50">
+                            <img src="./images/StefanPersona.png" alt="stefan user persona" class="mw-100">
+                        </div>
                     </div>
-                    <div class="left col-1-of-2 mt-25">
-                        <img src="./images/Stefan-user-persona.png" alt="stefan user persona" class="mw-100">
-                    </div>
-
+                    <div class="hide-on-desktop">
+                        <div class="left col-1-of-2 mt-25">
+                                <img src="./images/MaxPersona.png" alt="max user persona" class="mw-100">
+                            </div>
+                            <div class="left col-1-of-2 mt-25">
+                                <img src="./images/StefanPersona.png" alt="stefan user persona" class="mw-100">
+                            </div>
+                        </div>
                     <div class="cf"></div>
+
+                </div>
+                <div class="full-width center mb-75 mt-75">
+                        <a href="https://drive.google.com/drive/folders/1NmW7eUTpMcmRLqPusv_v9KB0gFoPuKWM?usp=sharing" class="view-materials btn">View User Personas</a>
                 </div>
 
                 <div class="mt-50">
@@ -235,14 +261,17 @@
                         content creation, collaboration, file access across devices. I then created a series of user
                         flows based on all of the highly prioritized stories.
                     </p>
-                    <div class="left col-1-of-2 mt-25 mb-25-d center">
-                        <img src="./images/Userflow1.png" alt="upload document userflow" class="mw-100 border">
-                    </div>
-                    <div class="left col-1-of-2 mt-25 mb-25">
-                        <img src="./images/Userflow2.png" alt="collaborate user flow" class="mw-100 border">
-                    </div>
-                    <div class="full-width center mt-25">
-                        <img src="./images/Userflow3.png" alt="organize content user flow" class="mw-100 border">
+
+                    <div class="mt-25 box">
+                        <img src="./images/Userflow3.png" alt="collaborate user flow" class="full-width box-image">
+                        <div class="full-width center mb-75 mt-75 hide-on-desktop">
+                            <a href="https://drive.google.com/drive/folders/1crFkOkoM-18yz5Pmi2n9KK1Pvtcd5IVP?usp=sharing" class="view-materials btn">View User Flows</a>
+                        </div>
+                        <a href="https://drive.google.com/drive/folders/1crFkOkoM-18yz5Pmi2n9KK1Pvtcd5IVP?usp=sharing" class="hide-on-mobile" alt="organize content user flow">
+                            <div class="box-middle">
+                                <div class="box-text">View User Flows</div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
@@ -257,17 +286,35 @@
                     </p>
                     <div class="mt-50 mb-25">
                         <div class="left col-1-of-2 pr-25">
-                            <img src="./images/LandingPage3.png" alt="CloudBin landing page wireframe" class="mw-100 border mb-25">
-                            <img src="./images/SignIn.png" alt="Sign In wireframe" class="mw-100 border mb-25">
-                            <img src="./images/SignUp.png" alt="Sign up wireframe" class="mw-100 border mb-25">
+                            <p>Landing Page:
+                                <img src="./images/LandingPage3.png" alt="CloudBin landing page wireframe" class="mw-100 border">
+                            </p>
+                            <p>Sign In:
+                                <img src="./images/SignIn.png" alt="Sign In wireframe" class="mw-100 border">
+                            </p>
+                            <p>Sign Up:
+                                <img src="./images/SignUp.png" alt="Sign up wireframe" class="mw-100 border">
+                            </p>
                         </div>
                         <div class="right col-1-of-2 pl-25">
-                            <img src="./images/Dashboard.png" alt="dashboard wireframe" class="mw-100 border mb-25">
-                            <img src="./images/NewDocument.png" alt="new document wireframe" class="mw-100 border mb-25">
-                            <img src="./images/Share.png" alt="share wireframe" class="mw-100 border mb-25">
-                            <img src="./images/StoreWebItems.png" alt="store links wireframe" class="mw-100 border mb-25">
+                            <p>Dashboard:
+                                <img src="./images/Dashboard.png" alt="dashboard wireframe" class="mw-100 border">
+                            </p>
+                            <p>New Document:
+                                <img src="./images/NewDocument.png" alt="new document wireframe" class="mw-100 border">
+                            </p>
+                            <p>Share:
+                                <img src="./images/Share.png" alt="share wireframe" class="mw-100 border">
+                            </p>
+                            <p>Store Web Items:
+                                <img src="./images/StoreWebItems.png" alt="store links wireframe" class="mw-100 border ">
+                            </p>
                         </div>
+
                         <div class="cf"></div>
+                        <div class="full-width center mb-75 mt-75">
+                                <a href="https://www.figma.com/file/RrtQdRG1Agrmw7AMKNG2eBTl/Cloud-Storage-Wireframes?node-id=1%3A775" class="view-materials btn">View Wireframes</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -370,27 +417,76 @@
                     <div class="right col-1-of-2 p-15">
                         <img src="./images/SourceSansPro.png" class="mw-100" alt="source sans pro font">
                     </div>
-
-                    <div class="cf"></div>
                 </div>
 
+                <div class="cf"></div>
+                <div class="full-width center mb-75 mt-75">
+                        <a href="https://drive.google.com/file/d/1Sli5YpvQElrkiCeFS5uNhzGtfZYykVFU/view?usp=sharing" class="view-materials btn">View Style Guide</a>
+                </div>
                 <div class="mt-50">
-                    <h2>High Fidelity Mockups</h2>
+                    <h2>User Testing</h2>
                     <div class="hide-on-mobile">
-                        <div class="mb-50 mt-50">
-                            <img src="./images/DashboardArrow.png" alt="dashboard design" class="mw-100">
+                        <div class="mb-50 mt-25">
+                            <div class="left col-1-of-2">
+                                <img src="./images/DashboardZoom.png" alt="first dashboard design" class="pr-40 mw-100">
+                            </div>
+                            <div class="right col-1-of-2 pl-40">
+                                <p class="m-0"> My first designs had all the content tabs located at the top with confusing upload        icons
+                                next to the name of the tabs. For my preference tests, I decided to change the styling
+                                of
+                                left side nav bar, the background color of my web app, and the share/cancel button on
+                                the
+                                share pop up.
+                                </p>
+                            </div>
+                            <div class="cf"></div>
                         </div>
-                        <div class="mb-50 mt-50">
-                            <img src="./images/NavBarArrow.png" alt="navbar design" class="mw-100">
+                        <div class="mb-50">
+                            <div class="right col-1-of-2">
+                                <img src="./images/DashboardZoomNav.png" alt="first nav bar design" class="pl-40 mw-100">
+                            </div>
+                            <div class="left pr-40 col-1-of-2">
+                                <p class="m-0">For the left side nav bar, I wanted to see if the arrow indicator made sense to users.     I
+                                tried changing it by getting rid of the arrow and instead highlighting the “Files” word
+                                on
+                                the nav bar. 70% of respondents liked the original design with the arrow, some stating
+                                it’s
+                                a cleaner look and makes it more obvious which page you’re on. Some also made a good
+                                point
+                                saying the red color comes across as an error or alert that signals something is wrong.
+                                In
+                                hindsight, I shouldn’t have tried using that red color.</p>
+                            </div>
+                            <div class="cf"></div>
                         </div>
-                        <div class="mb-50 mt-50">
-                            <img src="./images/ShareArrow.png" alt="share design" class="mw-100">
+                        <div class="mb-50">
+                            <div class="left col-1-of-2">
+                                <img src="./images/Share2.png" alt="first share box design" class="pr-40 mw-100">
+                            </div>
+                            <div class="right col-1-of-2 pl-40">
+                                <p class="m-0">For the design of the share pop up, I wanted to test a simple design of the share/cancel
+                                button to see if users thought the original button design was too dark. 70% of people
+                                liked
+                                my original dark design stating that the button is clearer, easier to see, and looks
+                                more
+                                action oriented.
+                                </p>
+                            </div>
+                            <div class="cf"></div>
                         </div>
+                        <div class="cf"></div>
+                            <p>After conducting these preference tests, I still felt the design was lacking and needed more
+                            uniformity. I created a few more iterations and finally decided on a final design where the
+                            side nav held the content tabs and the top tabs were used to toggle between your files,
+                            collaborators and settings. At this point I also ended up going back to my user research and realized I hadn't made enough emphasis on collaboration. One of the main features that I had identified in my research that users wanted was a simple way to collaborate, so I decided to design a better way to identify who the collaborators are on each file right along side the file data.
+                            </p>
+
                     </div>
+
                     <div class="hide-on-desktop">
                         <div class="mt-50 mb-50">
-                            <img src="./images/Dashboard-1.png" alt="first dashboard design" class="mw-100">
-                            <p>My first designs had all the content tabs located at the top with confusing upload icons
+                            <img src="./images/DashboardZoom.png" alt="first dashboard design" class="mw-100">
+                            <p>My first designs had all the content tabs located at the top with confusing upload         icons
                                 next to the name of the tabs. For my preference tests, I decided to change the styling
                                 of
                                 left side nav bar, the background color of my web app, and the share/cancel button on
@@ -400,7 +496,7 @@
                         </div>
 
                         <div class="mt-50 mb-50">
-                            <img src="./images/Dashboard-1.png" alt="first nav bar design" class="mw-100">
+                            <img src="./images/DashboardZoomNav.png" alt="first nav bar design" class="mw-100">
                             <p>For the left side nav bar, I wanted to see if the arrow indicator made sense to users. I
                                 tried changing it by getting rid of the arrow and instead highlighting the “Files” word
                                 on
@@ -413,7 +509,7 @@
                                 hindsight, I shouldn’t have tried using that red color.</p>
                         </div>
 
-                        <div class="mt-50 mb-50">
+                        <div class="mt-50 mb-25">
                             <img src="./images/Share2.png" alt="first share box design" class="mw-100">
                             <p>For the design of the share pop up, I wanted to test a simple design of the share/cancel
                                 button to see if users thought the original button design was too dark. 70% of people
@@ -423,42 +519,67 @@
                                 action oriented.
                             </p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="mt-50">
-                    <p>After conducting these preference tests, I still felt the design was lacking and needed more
+                        <p>After conducting these preference tests, I still felt the design was lacking and needed more
                         uniformity. I created a few more iterations and finally decided on a final design where the
                         side nav held the content tabs and the top tabs were used to toggle between your files,
                         collaborators and settings.
-                    </p>
+                        </p>
+                    </div>
+                </div>
+                <div class="cf"></div>
+                 <div class="mt-50">
                     <div class="mt-50 mb-25">
-                        <div class="left col-1-of-2 pr-25">
-                            <img src="./images/NewDashboard2.png" class="mw-100 mb-25" alt="final dashboard design">
-                            <img src="./images/Create.png" class="mw-100 mb-25" alt="final create design">
-                            <img src="./images/PhotosPage.png" class="mw-100 mb-25" alt="final photo page design">
-                            <img src="./images/Collaborators.png" class="mw-100 mb-25" alt="final collaborators design">
+                        <h2>High Fidelity Mockups</h2>
+                        <div class="mt-50 left col-1-of-2 pr-25">
+                            <p>Dashboard:
+                                <img src="./images/NewDashboard2.png" class="mw-100 mb-25" alt="final dashboard design">
+                            </p>
+                            <p>Create New Document:
+                                <img src="./images/Create.png" class="mw-100 mb-25" alt="final create design">
+                            </p>
+                            <p>Photos Page:
+                                <img src="./images/PhotosPage.png" class="mw-100 mb-25" alt="final photo page design">
+                            </p>
+                            <p>Collaborators Tab:
+                                <img src="./images/Collaborators.png" class="mw-100 mb-25" alt="final collaborators design">
+                            </p>
                         </div>
-                        <div class="right col-1-of-2 pl-25">
-                            <img src="./images/Documents.png" class="mw-100 mb-25" alt="final documents design">
-                            <img src="./images/CreateShare.png" class="mw-100 mb-25" alt="final create/shar1e design">
-                            <img src="./images/Links.png" class="mw-100 mb-25" alt="final links design">
-                            <img src="./images/Collaborators2.png" class="mw-100 mb-25" alt="final second page collaborators deisgn">
+                        <div class="mt-50 right col-1-of-2 pl-25">
+                            <p>Documents Page:
+                                <img src="./images/Documents.png" class="mw-100 mb-25" alt="final documents design">
+                            </p>
+                            <p>Share Window:
+                                <img src="./images/CreateShare.png" class="mw-100 mb-25" alt="final create/shar1e design">
+                            </p>
+                            <p>Links Page:
+                                <img src="./images/Links.png" class="mw-100 mb-25" alt="final links design">
+                            </p>
+                            <p>Collaborator Settings:
+                                <img src="./images/Collaborators2.png" class="mw-100 mb-25" alt="final second page collaborators deisgn">
+                            </p>
                         </div>
+
                         <div class="cf"></div>
+
+                        <div class="full-width center mb-75 mt-75">
+                                <a href="https://invis.io/XJMM9APSFY7" class="view-materials btn">View Prototype</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section project-text" data-anchor="conclusion-section">
-            <div class="conclusion-header">
-                <img src="./images/Conclusion.png" class="full-width" alt="conclusion header">
-                <div class="container mt-50 mb-50">
+        <!-- <section class="section project-text" data-anchor="conclusion-section"> -->
+        <section class="section fp-section active fp-table fp-completely" id="conclusion-section"  style="height: 100vh;">
+            <div class="fp-tableCell" style="height: 100vh;">
+                <div>
+                    <img src="./images/Conclusion.png" class="full-width" alt="conclusion header">
+                    <div class="container mt-50 mb-50 project-text">
 
-                    <h2>What I learned and what I would do differently</h2>
+                        <h2>What I learned and what I would do differently</h2>
 
-                    <p>I started this project with very little working knowledge of how much goes into user research.
+                        <p>I started this project with very little working knowledge of how much goes into user research.
                         Looking back, I realize that my user survey could have asked questions in a way where I could
                         get
                         better, more actionable data. Some questions could have been asked as a linear scale (how
@@ -473,16 +594,17 @@
                         different aspects of my design more frequently that it would have taken the guesswork out of it
                         and
                         would have allowed me to get to my final design much quicker.
-
+                        <br><br>
                         If I had more time on this project, I would have spent considerably more time on the logo
                         design.
                         I’m still not completely content with how it turned out, and I’m sure I could come up with
-                        something a bit more appealing.
+                        something a bit more appealing. <br><br>
                         Overall, I am proud of how hard I pushed myself on this project. I didn’t know the tools I used
                         very well and I am really excited to start my next project and utilize all my newfound
                         knowledge
                         and create something I am really excited and proud of.
-                    </p>
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -501,47 +623,110 @@
         </section>
     </main>
 
-    <script src="./js/scrolloverflow.js"></script>
-    <script src="./js/fullpage.min.js"></script>
-    <script src="./js/fullpage.extensions.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126457715-1"></script>
     <script>
-        new fullpage('#fullpage', {
-            licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-            scrollOverflow: true,
-            afterRender: function () {
-                var desktopFooterLink = document.getElementById('desktop-footer-link');
-                var mobileFooterLink = document.getElementById('mobile-footer-link');
-                var headerButton = document.getElementById('js-mobile-header-button');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-                desktopFooterLink.onclick = function (e) {
-                    e.preventDefault();
-                    fullpage_api.moveTo('footer-section');
-                }
-                mobileFooterLink.onclick = function (e) {
-                    e.preventDefault();
-                    fullpage_api.moveTo('footer-section');
-                }
-                headerButton.onclick = function (e) {
-                    e.preventDefault();
-                    $('.mobile-header-links').slideToggle('slow');
-                    headerButton.classList.toggle('is-active');
-                }
+        gtag('config', 'UA-126457715-1');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+   <script>
+        var seventyFiveCtx = document.getElementById('seventyFiveChart').getContext('2d');
+        var gradient = seventyFiveCtx.createLinearGradient(89, 178, 89, 0);
+        gradient.addColorStop(0,"#C276B9");
+        gradient.addColorStop(1,"#5F8BD8");
+        var myDoughnutChart = new Chart(seventyFiveCtx, {
+            type: 'doughnut',
+            data: {
+                labels:  [
+                            ' ',
+                            ' '
+                        ],
+                datasets: [{
+                    backgroundColor: [
+                        gradient,
+                        'rgb(157, 155, 156)'
+                    ],
+                    data: [75, 25],
+                }]
+            },
+            options: {
+                cutoutPercentage: 80,
+                legend: {
+                    display: false
+                },
+                events: []
+            }
+        });
+        var sixtyTwoCtx = document.getElementById('sixtyTwoChart').getContext('2d');
+        var gradient = seventyFiveCtx.createLinearGradient(89, 178, 89, 0);
+        gradient.addColorStop(0,"#C276B9");
+        gradient.addColorStop(1,"#5F8BD8");
+        var myDoughnutChart = new Chart(sixtyTwoCtx, {
+            type: 'doughnut',
+            data: {
+                labels:  [
+                            ' ',
+                            ' '
+
+                        ],
+                datasets: [{
+                    backgroundColor: [
+                        gradient,
+                        'rgb(157, 155, 156)'
+                    ],
+                    data: [62, 38],
+                }]
+            },
+            options: {
+                cutoutPercentage: 80,
+                legend: {
+                    display: false
+                },
+                events: []
+            }
+        });
+        var eightySevenCtx = document.getElementById('eightySevenChart').getContext('2d');
+        var gradient = seventyFiveCtx.createLinearGradient(89, 178, 89, 0);
+        gradient.addColorStop(0,"#C276B9");
+        gradient.addColorStop(1,"#5F8BD8");
+        var myDoughnutChart = new Chart(eightySevenCtx, {
+            type: 'doughnut',
+            data: {
+                labels:  [
+                            ' ',
+                            ' '
+
+                        ],
+                datasets: [{
+                    backgroundColor: [
+                        gradient,
+                        'rgb(157, 155, 156)'
+                    ],
+                    data: [87, 13],
+                }]
+            },
+            options: {
+                cutoutPercentage: 80,
+                legend: {
+                    display: false
+                },
+                events: []
             }
         });
     </script>
-
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126457715-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126457715-1');
+        var headerButton = document.getElementById('js-mobile-header-button');
+        headerButton.onclick = function(e) {
+            e.preventDefault();
+            $('.mobile-header-links').slideToggle('slow');
+            headerButton.classList.toggle('is-active');
+        }
     </script>
-
 </body>
 
 </html>
