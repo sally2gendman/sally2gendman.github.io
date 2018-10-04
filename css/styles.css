@@ -144,6 +144,10 @@ ol > li {
 	margin: 0;
 }
 
+.mt-n7 {
+	margin-top: -7px;
+}
+
 .mw-100 {
 	max-width: 100%;
 }
@@ -201,11 +205,11 @@ ol > li {
 }
 
 .pr-50 {
-	padding-right: 100px;
+	padding-right: 50px;
 }
 
 .pl-50 {
-	padding-left: 100px;
+	padding-left: 50px;
 }
 
 .button {
