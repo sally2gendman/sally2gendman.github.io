@@ -370,6 +370,10 @@ a {
 	font-size: 1.25em;
 }
 
+p > a {
+	font-size: 1em;
+}
+
 .underline {
 	text-decoration: underline;
 }
