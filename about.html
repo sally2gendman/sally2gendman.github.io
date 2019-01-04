@@ -1,129 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sally Tugendman - About</title>
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css"/>
-    <link href="./css/hamburgers.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ee3158"/>
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ee3158"/>
+    <meta name=msapplication-TileColor content=#FFFFFF>
+    <meta name=msapplication-TileImage content=favicon.ico>
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent"/>
+    <title>Sally Tugendman - Online Portfolio</title>
+    <!-- IE-Support -->
+    <script src="js/ie-support.js" defer></script>
+    <!-- css-files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/assets/favicon.ico" type="image/x-icon">
+    <!-- SEO -->
+    <meta property="og:title" content="Sally Tugendman - Online Portfolio" />
+    <meta property="og:description" content="Sally Tugendman's online portfolio." />
+    <meta property="og:url" content="https://www.sallytugendman.design/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:profile:first_name" content="Sally" />
+    <meta property="og:profile:last_name" content="Tugendman" />
+    <meta property="og:image" content="img/assets/MeArizona3.png" />
+    <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
-    <main id="fullpage">
-        <section class="section fp-section active fp-table fp-completely" id="about-page" style="height: 100vh;">
-            <div class="fp-tableCell" style="height: 100vh;">
-                <header>
-                    <div class="hide-on-desktop">
-                        <img src="./images/header-logo.png" class="header-logo" alt="logo">
-                        <span class="hamburger hamburger--squeeze" id="js-mobile-header-button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </span>
-                        <nav class="about-mobile-header-links mobile-header-links" style="display: none;">
-                            <a href="./" class="header-link">Home</a>
-                            <!-- <hr> -->
-                            <a href="./about" class="header-link">About</a>
-                            <!-- <hr> -->
-                            <a href="./project" class="header-link">Work</a>
-                            <!-- <hr> -->
-                            <a href="./Resume.pdf" class="header-link">Resume</a>
-                            <!-- <hr> -->
-                            <a href="#footer" class="header-link">Contact</a>
-                        </nav>
-                    </div>
-                    <div class="hide-on-mobile">
-                        <img src="./images/header-logo.png" class="header-logo" alt="logo">
-                        <nav class="header-links">
-                            <a href="./" class="header-link">Home</a>
-                            <a href="./about" class="header-link">About</a>
-                            <a href="./project" class="header-link">Work</a>
-                            <a href="./Resume.pdf" class="header-link">Resume</a>
-                            <a href="#footer" class="header-link">Contact</a>
-                        </nav>
-                    </div>
-                </header>
+<!-- [1] Page Loader -->
+<div class="loader">
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+</div>
+<div id="main-wrapper" class="wrapper-hidden z-index-100">
+    <!-- [2] Navigation-Menu -->
+    <nav class="navbar navbar-default desktop-menu logo-left">
+        <div class="container-fluid navbar-inner">
+            <div class="navbar-logo">
+                <a href="/" class="logo-link d-flex align-items-center" data-aos="zoom-in"
+                   data-aos-delay="1000" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <img src="img/assets/FINALLOGOWHITE.png" alt="" class="logo-img logo-light">
+                    <img src="img/assets/FINALLOGOWHITE.png" alt="" class="logo-img logo-dark">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <ul class="navbar-menu-list">
+                    <li class="menu-primary-item">
+                        <a href="/" class="primary-mobile-menu-toggle">Home</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="/about.html" class="primary-mobile-menu-toggle">About</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="/portfolio.html" class="primary-mobile-menu-toggle">Portfolio</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="img/assetsSallyTugendman2018.pdf" class="primary-mobile-menu-toggle">Resume</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="/contact.html" class="primary-mobile-menu-toggle">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="hamburger justify-content-center align-items-center hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+    <!-- [3] Page-Header -->
+    <header class="page-header parallax-window bg_img dark_overlay"  data-src="img/assets/MeArizona3.png">
+    </header>
+    <!-- [4] Blog Section -->
+    <section class="white-section blog-section single-post-section">
+        <div class="container"
+             data-aos="fade"
+             data-aos-anchor-placement="top-bottom"
+             data-aos-easing="ease-in-out"
+             data-aos-duration="800">
+            <div class="row">
+                <div class="col single-post-wrapper">
+                    <div style="border-bottom: none" class="post-content">
+                        <h3 class="post-title">My Road to Design</h3>
+                        <h5 style="font-weight: 100" class="text-part">As a native of a small town just north of San Francisco, I grew up around artists. Both of my parents are writers and jewelers, and my mom a photographer. From a young age I knew I was a bit different than the other students I attended school with. Math and science didn’t make sense to me, but photography and art did. I carried around a disposable camera everywhere I went, and once I was in 8th grade my mom bought me my first ever film camera. I started shooting black and white film and developing prints in the darkroom when I was 13. The excitement I felt when I saw the photograph suddenly appear after I put the print in the developer was a feeling I had never experienced before. I would create murals of my prints on my walls and juxtapose them in ways I thought looked beautiful. I began studying famous photographers and found the work of Richard Avedon and Diane Arbus fascinating. I was always in awe how their photographs captured real, raw human emotion so artfully. The way their portraits could conjure such intense emotions in you moved me immensely, and I remember thinking how badly I wanted to be able to do that with my work someday. I practiced photography all throughout high school and even received a scholarship for college my senior year.<br><br>
+                                After a few years of wandering and working in various roles, I made a good friend who introduced me to sales. I worked as an inside sales rep for a while at a couple cybersecurity companies, but the monotonous work of sending emails and the terrifying act of cold calling was not up my alley.
 
-                <div class="container about-page-content">
-                    <div class="about-header">
-                        <img src="./images/MeArizona3.png" alt="picture of Sally" class="mw-100 center-image">
-                    </div>
-                    <div class="center">
-                        <h2>Hi! My name is Sally.</h2>
-                    </div>
-                    <div class="">
-                        <p>
-                            As a native of a small town just north of San Francisco, I grew up around artists. Both of my parents are writers and jewelers, and my mom a photographer.
-                            From a young age I knew I was a bit different than the other students I attended school with. Math and science didn’t make sense to me, but photography and art did.
-                            I carried around a disposable camera everywhere I went, and once I was in 8th grade my mom bought me my first ever film camera.
-                            I started shooting black and white film and developing prints in the darkroom when I was 13. The excitement I felt when I saw the photograph suddenly appear after I put the print in the developer was a feeling I had never experienced before.
-                            I would create murals of my prints on my walls and juxtapose them in ways I thought looked beautiful. I began studying famous photographers and found the work of Richard Avedon and Diane Arbus fascinating. I was always in awe how their photographs captured real,
-                            raw human emotion so artfully. The way their portraits could conjure such intense emotions in you moved me immensely, and I remember thinking how badly I wanted to be able to do that with my work someday.
-                            I practiced photography all throughout high school and even received a scholarship for college my senior year.<br><br> After a few years of wandering and working in various roles, I made a good friend who introduced me to sales.
-                            I worked as an inside sales rep for a while at a couple cybersecurity companies, but the monotonous work of sending emails and the terrifying act of cold calling was not up my alley.<br><br>
-                            I knew it was time I figured  out what I truly wanted to do. I wanted to combine my love of photography and design with my interest in technology and turn it into a career. I did hours of research and that’s when I found it: UI/UX design.
-                            I started thinking back to all the lead generation software applications I had used while I was in sales, and how often I found myself saying, who the heck designed this?! The UX is atrocious, and the UI is confusing. I know how I’d fix it.
-                            It was the aha moment that I had been searching for for years.<br><br> I’ve always had an enormously deep passion for finding the most efficient solutions to client and business problems, and I love the idea of creating beautiful, seamless user experiences through design.
-                            I am beyond excited that I get to make my childhood dream of designing something that moves people into a lifelong career.
-                        </p>
-                        <h3>Thanks for reading,</h3>
-                        <div>
-                            <img src="./images/SignatureFinal.png" class="mw-100" alt="sally's signature">
-                        </div>
-                    </div>
+                                I knew it was time I figured out what I truly wanted to do. I wanted to combine my love of photography and design with my interest in technology and turn it into a career. I did hours of research and that’s when I found it: UI/UX design. I started thinking back to all the lead generation software applications I had used while I was in sales, and how often I found myself saying, who the heck designed this?! The UX is atrocious, and the UI is confusing. I know how I’d fix it. It was the aha moment that I had been searching for for years.<br><br>
 
-                    <div class="mt-50 mb-50">
-                        <div class="left col-1-of-2 mb-25">
-                            <img src="./images/MeArizona.png" class="mw-100 center-image" alt="picture of Sally">
-                        </div>
-                        <div class="right col-1-of-2">
-                            <img src="./images/MeItaly.png" class="mw-100 center-image">
-                        </div>
-                        <div class="cf"></div>
+                                I’ve always had an enormously deep passion for finding the most efficient solutions to client and business problems, and I love the idea of creating beautiful, seamless user experiences through design. I am beyond excited that I get to make my childhood dream of designing something that moves people into a lifelong career.
+
+                                <br><br>Thanks for reading,
+                        </h5>
+                    </div>
+                    <div class="post-thumb-wrapper">
+                        <img src="img/assets/Signature.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="section fp-auto-height center" id="footer">
-            <div class="container" id="footer-content">
-                <h1>Want to connect?</h1>
-                <div class="mt-50">
-                    <a href="mailto:sally.tugendman3@gmail.com" class="contact-links"><img src="./images/envelope.png"></a>
-                    <a href="https://www.linkedin.com/in/stugendman" class="contact-links"><img src="./images/linkedin.png"></a>
-                    <a href="https://github.com/sally2gendman/" class="contact-links"><img src="./images/github.png"></a>
+        </div>
+    </section>
+    <!-- [13] Footer -->
+    <footer>
+        <div class="container-fluid footer-inner">
+            <div class="footer-top">
+                <div class="container footer-top-inner">
+                    <p class="info-text">© 2018 Sally Tugendman</p>
+                    <div class="social-networks">
+                        <div class="social-wrapper">
+                            <a href="https://www.linkedin.com/in/stugendman/" class="social-box">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:sally.tugendman3@gmail.com" class="social-box">
+                                <i class="fab fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <p class="mt-50">© 2018 Designed and Coded by Sally Tugendman</p>
             </div>
-        </section>
-    </main>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        var headerButton = document.getElementById('js-mobile-header-button');
-        headerButton.onclick = function(e) {
-            e.preventDefault();
-            $('.mobile-header-links').slideToggle('slow');
-            headerButton.classList.toggle('is-active');
-        }
-    </script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126457715-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-126457715-1');
-    </script>
-
+        </div>
+    </footer>
+</div>
+<!-- js-files -->
+<!-- JQuery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- AOS -->
+<script src="js/aos.js"></script>
+<!-- Parallax -->
+<script src="js/parallax.js"></script>
+<!-- Progress Bars -->
+<script src="js/progressbar.min.js"></script>
+<!-- Magnific -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Three -->
+<script src="js/three.min.js"></script>
+<!-- Projector -->
+<script src="js/projector.js"></script>
+<!-- Renderer -->
+<script src="js/canvas-renderer.js"></script>
+<!-- ImageLoaded -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<!-- Anime -->
+<script src="js/anime.min.js"></script>
+<!-- Isotope -->
+<script src="js/isotope.pkgd.min.js"></script>
+<!-- TweenLite -->
+<script src="js/TweenLite.min.js"></script>
+<!-- Hover3D -->
+<script src="js/jquery.hover3d.min.js"></script>
+<!-- EasePack -->
+<script src="js/EasePack.min.js"></script>
+<!-- Particles -->
+<script src="js/particles.min.js"></script>
+<!-- JSColor -->
+<script src="js/jscolor.js"></script>
+<!-- YoutubeBackground -->
+<script src="js/jquery.youtubebackground.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Swiper -->
+<script src="js/swiper.min.js"></script>
+<!-- Main JS-file -->
+<script src="js/main.js"></script>
 </body>
 </html>

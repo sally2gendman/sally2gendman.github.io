@@ -1,154 +1,371 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#ee3158"/>
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#ee3158"/>
+    <meta name=msapplication-TileColor content=#FFFFFF>
+    <meta name=msapplication-TileImage content=favicon.ico>
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent"/>
     <title>Sally Tugendman - Online Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./css/fullpage.min.css"/>
-    <link href="./css/hamburgers.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- IE-Support -->
+    <script src="js/ie-support.js" defer></script>
+    <!-- css-files -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/assets/favicon.ico" type="image/x-icon">
+    <!-- SEO -->
+    <meta property="og:title" content="Sally Tugendman - Online Portfolio" />
+    <meta property="og:description" content="Sally Tugendman's online portfolio." />
+    <meta property="og:url" content="https://www.sallytugendman.design/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:profile:first_name" content="Sally" />
+    <meta property="og:profile:last_name" content="Tugendman" />
+    <meta property="og:image" content="img/assets/MeArizona3.png" />
+    <meta name="twitter:card" content="summary_large_image">
 </head>
-
 <body>
-    <main id="fullpage">
-
-        <section class="section fp-section active fp-table fp-completely" id="about"  style="height: 100vh;">
-            <div class="fp-tableCell" style="height: 100vh;">
-            <header>
-                <div class="hide-on-desktop">
-                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
-                    <span class="hamburger hamburger--squeeze" id="js-mobile-header-button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </span>
-                    <nav class="home-mobile-header-links mobile-header-links" style="display: none;">
-                        <a href="./" class="header-link">Home</a>
-                        <!-- <hr> -->
-                        <a href="./about" class="header-link">About</a>
-                        <!-- <hr> -->
-                        <a href="./project" class="header-link">Work</a>
-                        <!-- <hr> -->
-                        <a href="./Resume.pdf" class="header-link">Resume</a>
-                        <!-- <hr> -->
-                        <a href="#footer" class="header-link">Contact</a>
-                    </nav>
-                </div>
-                <div class="hide-on-mobile">
-                    <img src="./images/header-logo.png" class="header-logo" alt="logo">
-                    <nav class="header-links">
-                        <a href="./" class="header-link">Home</a>
-                        <a href="./about" class="header-link">About</a>
-                        <a href="./project" class="header-link">Work</a>
-                        <a href="./Resume.pdf" class="header-link">Resume</a>
-                        <a href="#footer" class="header-link">Contact</a>
-                    </nav>
-                </div>
-            </header>
-
-            <div class="container">
-                <h1>Hey there! My name is Sally</h1>
-                <h3>I’m a UI/UX Designer based in San Francisco.<br>
-                I create exciting, sensible digital experiences while always keeping the user in mind.<br><br>
-                It’s nice to meet you!</h3>
+<!-- [1] Page Loader -->
+<div class="loader">
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+</div>
+<div id="main-wrapper" class="wrapper-hidden z-index-100">
+    <!-- [2] Navigation-Menu -->
+    <nav class="navbar navbar-default desktop-menu logo-left">
+        <div class="container-fluid navbar-inner">
+            <div class="navbar-logo">
+                <a href="/" class="logo-link d-flex align-items-center" data-aos="zoom-in"
+                   data-aos-delay="1000" data-aos-easing="ease-in-out" data-aos-duration="700">
+                    <img src="img/assets/FINALLOGOWHITE.png" alt="" class="logo-img logo-light">
+                    <img src="img/assets/FINALLOGOWHITE.png" alt="" class="logo-img logo-dark">
+                    <!-- <span class="subtitle" style="color: white; text-decoration: none;">Sally T</span> -->
+                </a>
             </div>
+            <div class="navbar-menu">
+                <ul class="navbar-menu-list">
+                    <li class="menu-primary-item">
+                        <a href="/" class="primary-mobile-menu-toggle">Home</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="/about.html" class="primary-mobile-menu-toggle">About</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="/portfolio.html" class="primary-mobile-menu-toggle">Portfolio</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="img/assetsSallyTugendman2018.pdf" class="primary-mobile-menu-toggle">Resume</a>
+                    </li>
+                    <li class="menu-primary-item">
+                        <a href="/contact.html" class="primary-mobile-menu-toggle">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-
-        <section class="section fp-section fp-table active fp-completely" id="work"  style="height:100vh;">
-            <div class="fp-tableCell" style="height: 100vh;">
-                <div class="container mt-50">
-                    <h1 class="center mb-75">Work</h1>
-
-                    <div class="mt-50 mb-50">
-                        <img src="./images/Group.png" alt="CloudBin on laptop" class="mw-100 center-image">
-                        <div class="mt-50 center relative-container">
-                        <h2>CloudBin</h2>
-                        <hr>
-                        <div class="mb-30">
-                            <p class="italic">RESEARCH - BRANDING - WIREFRAMES<br>Hi-FIDELITY MOCKUPS - PROTOTYPES</p>
-                            <p>CloudBin is a cloud storage platform that provides users with a seamless experience that focuses on content organization and user collaboration</p>
+            <button class="hamburger justify-content-center align-items-center hamburger--spin" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </nav>
+    <!-- [3] Hero-Header -->
+    <section class="hero-header hero-default"
+             data-section-type="background_gradient">
+        <div class="gradient-background"></div>
+        <div class="container hero-content hero-center d-flex align-items-center">
+            <div class="content-default">
+                <h1 class="display-3 content-heading bold-heading z-index-100"
+                    data-aos="zoom-in"
+                    data-aos-delay="900"
+                    data-aos-easing="ease-in-out"
+                    data-aos-duration="700">Hey there! My name is Sally<span class="highlight">.</span>
+                </h1>
+                <p class="subtitle z-index-100"
+                   data-aos="zoom-in"
+                   data-aos-delay="1100"
+                   data-aos-easing="ease-in-out"
+                   data-aos-duration="700">I’m a UI/UX Designer based in the San Francisco Bay Area.<br>
+                   I create exciting, sensible digital experiences while always keeping the user in mind.<br><br>
+                   It’s nice to meet you!</p>
+            </div>
+            <div class="angle-down"
+                 data-aos="zoom-in"
+                 data-aos-delay="1300"
+                 data-aos-anchor=".hero-header"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="700">
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+    <!-- [5] Digital Services -->
+    <section class="digital-services">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-12 content light-gray-section">
+                    <div class="content-wrapper">
+                        <h2 class="section-title"
+                            data-aos="fade-up"
+                            data-aos-delay="250"
+                            data-aos-anchor-placement="top-bottom"
+                            data-aos-easing="ease-in-out"
+                            data-aos-duration="700">Beautybook</h2>
+                        <p class="subtitle"
+                           data-aos="fade-up"
+                           data-aos-delay="300"
+                           data-aos-anchor-placement="top-bottom"
+                           data-aos-easing="ease-in-out"
+                           data-aos-duration="700">Mobile application that allows users to read and post reviews on products in makeup and skincare.</p>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12 col-xl-6"
+                                 data-aos="fade-up"
+                                 data-aos-delay="250"
+                                 data-aos-anchor-placement="top-bottom"
+                                 data-aos-easing="ease-in-out"
+                                 data-aos-duration="700">
+                                <div class="d-flex service-item-type-2">
+                                    <div class="icon-wrapper d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-flask"></i>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="title-service">Research</h6>
+                                        <p class="service-text">User surveys, user personas, user stories, user flows.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-12 col-xl-6"
+                                 data-aos="fade-up"
+                                 data-aos-delay="300"
+                                 data-aos-anchor-placement="top-bottom"
+                                 data-aos-easing="ease-in-out"
+                                 data-aos-duration="700">
+                                <div class="d-flex service-item-type-2">
+                                    <div class="icon-wrapper d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-paint-brush"></i>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="title-service">Branding</h6>
+                                        <p class="service-text">Logos, styleguide, color palette, fonts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-12 col-xl-6"
+                                 data-aos="fade-up"
+                                 data-aos-delay="350"
+                                 data-aos-anchor-placement="top-bottom"
+                                 data-aos-easing="ease-in-out"
+                                 data-aos-duration="700">
+                                <div class="d-flex service-item-type-2">
+                                    <div class="icon-wrapper d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-file-image"></i>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="title-service">Wireframes</h6>
+                                        <p class="service-text">Sitemap, lo-fi wireframes, hi-fi wireframes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-12 col-xl-6"
+                                 data-aos="fade-up"
+                                 data-aos-delay="400"
+                                 data-aos-anchor-placement="top-bottom"
+                                 data-aos-easing="ease-in-out"
+                                 data-aos-duration="700">
+                                <div class="d-flex service-item-type-2">
+                                    <div class="icon-wrapper d-flex align-items-center justify-content-center">
+                                        <i class="fa fa-check-square"></i>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h6 class="title-service">Prototypes</h6>
+                                        <p class="service-text">Hi-fi mockups, clickable interactive prototype.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <a href="/project.html" class="button">Read Case Study</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section fp-section fp-table active fp-completely" id="work2"  style="height: 100vh;">
-            <div class="fp-tableCell" style="height: 100vh;">
-                <div class="container">
-                    <div class="mt-50 mb-50">
-
-                        <img src="./images/Phonescopy.png" alt="iPhone" class="mw-100 center-image">
-                        <div class="mt-50 center relative-container">
-                        <h2>Beauty Reviews</h2>
-                        <hr>
-                        <div class="mb-30">
-                            <p class="italic">RESEARCH - BRANDING - WIREFRAMES<br>Hi-FIDELITY MOCKUPS - PROTOTYPES</p>
-                            <p>Mobile application that allows users to post reviews on various makeup, skincare and beauty items.</p>
+                        <div class="btn-wrapper d-flex" data-label-id="0">
+                            <a href="/beautybook.html" class="button-default-color">See Case Study</a>
                         </div>
-                            <a href="#" class="button">Coming Soon</a>
-                    </div>
-
                     </div>
                 </div>
-            </div>
-        </section>
-
-
-        <section class="section fp-section fp-table active fp-completely" id="photography"  style="height:100vh;">
-            <div class="fp-tableCell" style="height: 100vh;">
-            <div class="container mt-50 mb-50">
-                <h1 class="center mb-50">Photography</h1>
-                    <div class="relative-container mt-50 mb-50">
-                    <p>My path to digital design began with photography (read more about that <a href="./about.html">here</a>). Here is a collection of my work, both in digital and black & white film.</p>
+                <div class="col-lg-6 col-12 image parallax-window" data-src="/img/assets/bb-iphone.webp">
                 </div>
-                <img src="./images/photocollage.png" alt="Photo Collage" class="mw-100 center-image">
-            </div>
-            </div>
-        </section>
-
-        <section class="section fp-auto-height center" id="footer">
-            <div class="container" id="footer-content">
-                <h1>Want to connect?</h1>
-                <div class="mt-50">
-                    <a href="mailto:sally.tugendman3@gmail.com" class="contact-links"><img src="./images/envelope.png"></a>
-                    <a href="https://www.linkedin.com/in/stugendman" class="contact-links"><img src="./images/linkedin.png"></a>
-                    <a href="https://github.com/sally2gendman/" class="contact-links"><img src="./images/github.png"></a>
+                <div class="col-lg-6 col-12 image bg_img parallax-window last-image"
+                     data-src="/img/assets/dropbox.png">
                 </div>
-
-                <p class="mt-50">© 2018 Designed and Coded by Sally Tugendman</p>
+                <div class="col-lg-6 col-12 content-about light-gray-section">
+                    <div class="content-wrapper"
+                         data-aos="fade-up"
+                         data-aos-delay="100"
+                         data-aos-anchor-placement="top-bottom"
+                         data-aos-easing="ease-in-out"
+                         data-aos-duration="700">
+                        <h2 class="section-title">Dropbox Redesign</h2>
+                        <p class="about-text">I participated in a 24hr design challenge that asked to redesign Dropbox's dashboard to help increase visibility of the types of files users have.</p>
+                        <p class="about-text">The current version of Dropbox lumps all content together unless you create your own folders. I wanted to create a dashboard that gave the user the ability to do a quick scan of their content as well as the ability to have preset folders.</p>
+                        <div class="btn-wrapper d-flex" data-label-id="0">
+                                <a href="/dropbox-redesign.html" class="button-default-color">See Full Design</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        var headerButton = document.getElementById('js-mobile-header-button');
-        headerButton.onclick = function(e) {
-            e.preventDefault();
-            $('.mobile-header-links').slideToggle('slow');
-            headerButton.classList.toggle('is-active');
-        }
-    </script>
+    <!-- [10] Recent Projects -->
+    <section class="projects-section light-gray-section">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <h2 class="section-title text-center title-divider"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                        data-aos-anchor-placement="top-bottom"
+                        data-aos-easing="ease-in-out"
+                        data-aos-duration="700">My photography<span class="highlight">.</span></h2>
+                </div>
+            </div>
+            <div class="container" style="margin-bottom: 80px; font-size: 18px;">
+                <p class="subtitle aos-init aos-animate" data-aos="fade-up" data-aos-delay="300" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out" data-aos-duration="700">My path to digital design began with photography (read more about that here). Here is a collection of my work, both in digital and black & white film.</p>
+            </div>
+        </div>
+        <div class="grid image-gallery popup-gallery"
+        data-aos="fade-up"
+        data-aos-delay="150"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="600">
+            <a href="img/assets/spainhorses.JPG" class="image-item">
+                <img src="img/assets/horsesmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/antelopecanyon1.JPG" class="image-item">
+                <img src="img/assets/antelopecanyonsmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/venice.jpg" class="image-item">
+                <img src="img/assets/venicesmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/puppy.JPG" class="image-item">
+                <img src="img/assets/puppysmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/israel.jpg" class="image-item">
+                <img src="img/assets/israelsmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/mission.png" class="image-item">
+                <img src="img/assets/missionsmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/rome.png" class="image-item">
+                <img src="img/assets/rome2.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/sevilla.png" class="image-item">
+                <img src="img/assets/sevillasmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/guards.jpg" class="image-item">
+                <img src="img/assets/guardssmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/bar.png" class="image-item">
+                <img src="img/assets/barsmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/bunny.png" class="image-item">
+                <img src="img/assets/bunnysmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="img/assets/streamers.png" class="image-item">
+                <img src="img/assets/streamerssmall.webp" alt="" class="img-fluid">
+                <i class="fa fa-search"></i>
+            </a>
+        </div>
+    </section>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126457715-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-126457715-1');
-    </script>
-
+    <!-- [13] Footer -->
+    <footer>
+        <div class="container-fluid footer-inner">
+            <div class="footer-top">
+                <div class="container footer-top-inner">
+                    <p class="info-text">© 2018 Sally Tugendman</p>
+                    <div class="social-networks">
+                        <div class="social-wrapper">
+                            <!-- <a href="#" class="social-box">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-box">
+                                <i class="fab fa-twitter"></i>
+                            </a> -->
+                            <a href="https://www.linkedin.com/in/stugendman/" class="social-box">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:sally.tugendman3@gmail.com" class="social-box">
+                                <i class="fab fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- js-files -->
+<!-- JQuery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- AOS -->
+<script src="js/aos.js"></script>
+<!-- Parallax -->
+<script src="js/parallax.js"></script>
+<!-- Progress Bars -->
+<script src="js/progressbar.min.js"></script>
+<!-- Magnific -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<!-- Three -->
+<script src="js/three.min.js"></script>
+<!-- Projector -->
+<script src="js/projector.js"></script>
+<!-- Renderer -->
+<script src="js/canvas-renderer.js"></script>
+<!-- ImageLoaded -->
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<!-- Anime -->
+<script src="js/anime.min.js"></script>
+<!-- Isotope -->
+<script src="js/isotope.pkgd.min.js"></script>
+<!-- TweenLite -->
+<script src="js/TweenLite.min.js"></script>
+<!-- Hover3D -->
+<script src="js/jquery.hover3d.min.js"></script>
+<!-- EasePack -->
+<script src="js/EasePack.min.js"></script>
+<!-- Particles -->
+<script src="js/particles.min.js"></script>
+<!-- JSColor -->
+<script src="js/jscolor.js"></script>
+<!-- YoutubeBackground -->
+<script src="js/jquery.youtubebackground.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Swiper -->
+<script src="js/swiper.min.js"></script>
+<!-- Main JS-file -->
+<script src="js/main.js"></script>
 </body>
 </html>
